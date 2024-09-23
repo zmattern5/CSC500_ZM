@@ -31,6 +31,7 @@ class ShoppingCart(ItemToPurchase):
             if cart_items.item_name == item:
                 self.cart_items.pop(counter)
             counter = counter + 1
+            break
         else:
             print('Item not found in cart. Nothing removed.')
     def modify_item(self,item):
@@ -82,7 +83,7 @@ def print_menu(cart):
         print('MENU')
         print('a - Add Item to cart')
         print('r - Remove item from cart')
-        print('c- Change item quantity')
+        print('c - Change item quantity')
         print('i - Output items description')
         print('o - Output shopping cart')
         print('q - Quit')
